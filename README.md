@@ -48,16 +48,6 @@ http://burakcan.me/grunt-birakin-isleri-o-halletsin/
 http://sonsuzdongu.com/blog/grunt-ile-frontend-islerinizi-otomatize-edin
 http://tolga.gezginis.com/gulp-ile-frontend-islerinizi-yonetin.html
 
-### Sıkıştırın!
-
-![](http://llcdn.listelist.com/listeliststatic/2013/05/Metrob%C3%BCs-s%C4%B1k%C4%B1%C5%9F%C4%B1k.jpg)
-
-Gereksiz dosyalarımızı projeden çıkardıktan sonraki adim, tarayıcının indirmesi gereken kaynakların boyutunu en aza indirmektir. Kaynak türüne (metin, resimler, yazı tipleri vs.) bağlı olarak birbirinden farklı çeşitli teknikler bulunuyor.
-
-GZIP, metin içeren dosyalarda bize bu konuda yardımcı oluyor. CSS, Javascript, HTML dosyalarımızı sunucuda gzip ile sıkıştırabiliriz. Tüm modern tarayıcılar GZIP sıkıştırmasını desteklemektedir. Sunucunuzun GZIP sıkıştırmasını çalıştıracak şekilde yapılandırılması gerekmektedir. Bu konuda hizmet aldığınız firma size yardımcı olacaktır. [Basit](http://stackoverflow.com/questions/2666120/how-can-i-gzip-my-javascript-and-css-files) birkaç konfigürasyon ile sizde yapabilirsiniz.
-
-Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
-<table class="table-4"><colgroup><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th>Kitaplik</th><th>Boyut</th><th>Sikistirilmis boyut</th><th>Sikistirma orani</th></tr></thead><tbody><tr><td data-th="kitaplik">jquery-1.11.0.js</td><td data-th="boyut">276 KB</td><td data-th="sikistirilmis">82 KB</td><td data-th="tasarruflar">%70</td></tr><tr><td data-th="kitaplik">jquery-1.11.0.min.js</td><td data-th="boyut">94 KB</td><td data-th="sikistirilmis">33 KB</td><td data-th="tasarruflar">%65</td></tr><tr><td data-th="kitaplik">angular-1.2.15.js</td><td data-th="boyut">729 KB</td><td data-th="sikistirilmis">182 KB</td><td data-th="tasarruflar">%75</td></tr><tr><td data-th="kitaplik">angular-1.2.15.min.js</td><td data-th="boyut">101 KB</td><td data-th="sikistirilmis">37 KB</td><td data-th="tasarruflar">%63</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.css</td><td data-th="boyut">118 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%85</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.min.css</td><td data-th="boyut">98 KB</td><td data-th="sikistirilmis">17 KB</td><td data-th="tasarruflar">%83</td></tr><tr><td data-th="kitaplik">foundation-5.css</td><td data-th="boyut">186 KB</td><td data-th="sikistirilmis">22 KB</td><td data-th="tasarruflar">%88</td></tr><tr><td data-th="kitaplik">foundation-5.min.css</td><td data-th="boyut">146 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%88</td></tr></tbody></table>
 
 ### Kullanıcıyı Unutmayın! 
 
@@ -72,6 +62,7 @@ Bu konuda https://kraken.io/ size cüzi bir ücret karşılığında yardımcı 
 
 https://www.reddit.com/r/Android/comments/1x5ct6/image_compression_on_instagram/ şurada bu konu hakkında, son derece feyizli bir sohbet bulunuyor. Okumanızı tavsiye ederim.
 
+
 ### Tarayıcı Önbellekleme
 
 ![](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/images/http-cache-hierarchy.png)
@@ -80,6 +71,22 @@ https://www.reddit.com/r/Android/comments/1x5ct6/image_compression_on_instagram/
 
 Kullanıcılar sayfanızı ziyaret ettikten sonra, tekrardan geri dönüş yapacaklardır. Bu geri dönüş esnasında, tarayıcından indirdiği dosyaları, tekrardan indirmesine gerek yok. Bu yüzden statik dosyalarınızı önbelleğe almalısınız. Bu sayed, daha sonraki girişlerde, sayfanız kullanıcının ekranında daha hızlı açılacaktır.
 
+### Sıkıştırın!
+
+![](http://llcdn.listelist.com/listeliststatic/2013/05/Metrob%C3%BCs-s%C4%B1k%C4%B1%C5%9F%C4%B1k.jpg)
+
+Gereksiz dosyalarımızı projeden çıkardıktan sonraki adim, tarayıcının indirmesi gereken kaynakların boyutunu en aza indirmektir. Kaynak türüne (metin, resimler, yazı tipleri vs.) bağlı olarak birbirinden farklı çeşitli teknikler bulunuyor.
+
+GZIP, metin içeren dosyalarda bize bu konuda yardımcı oluyor. CSS, Javascript, HTML dosyalarımızı sunucuda gzip ile sıkıştırabiliriz. Tüm modern tarayıcılar GZIP sıkıştırmasını desteklemektedir. Sunucunuzun GZIP sıkıştırmasını çalıştıracak şekilde yapılandırılması gerekmektedir. Bu konuda hizmet aldığınız firma size yardımcı olacaktır. [Basit](http://stackoverflow.com/questions/2666120/how-can-i-gzip-my-javascript-and-css-files) birkaç konfigürasyon ile sizde yapabilirsiniz.
+
+Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
+<table class="table-4"><colgroup><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th>Kitaplik</th><th>Boyut</th><th>Sikistirilmis boyut</th><th>Sikistirma orani</th></tr></thead><tbody><tr><td data-th="kitaplik">jquery-1.11.0.js</td><td data-th="boyut">276 KB</td><td data-th="sikistirilmis">82 KB</td><td data-th="tasarruflar">%70</td></tr><tr><td data-th="kitaplik">jquery-1.11.0.min.js</td><td data-th="boyut">94 KB</td><td data-th="sikistirilmis">33 KB</td><td data-th="tasarruflar">%65</td></tr><tr><td data-th="kitaplik">angular-1.2.15.js</td><td data-th="boyut">729 KB</td><td data-th="sikistirilmis">182 KB</td><td data-th="tasarruflar">%75</td></tr><tr><td data-th="kitaplik">angular-1.2.15.min.js</td><td data-th="boyut">101 KB</td><td data-th="sikistirilmis">37 KB</td><td data-th="tasarruflar">%63</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.css</td><td data-th="boyut">118 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%85</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.min.css</td><td data-th="boyut">98 KB</td><td data-th="sikistirilmis">17 KB</td><td data-th="tasarruflar">%83</td></tr><tr><td data-th="kitaplik">foundation-5.css</td><td data-th="boyut">186 KB</td><td data-th="sikistirilmis">22 KB</td><td data-th="tasarruflar">%88</td></tr><tr><td data-th="kitaplik">foundation-5.min.css</td><td data-th="boyut">146 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%88</td></tr></tbody></table>
+
+### Alman Olun!
+
+Almanlık sıkı disiplin gerektiren bir mevzudur. Bizlere düşen görev ise, yaptığımız işlerin kullanıcılar tarafından kullanıldığını unutmayıp, gelecekte bir gün iyi bir Alman olmaktır. 
+
+![](http://pbs.twimg.com/media/BsDIXntCEAA0XHL.jpg)
 
 
 
