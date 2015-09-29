@@ -88,6 +88,7 @@ Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
 Biri Steam diğeri ise http://www.digigame.com.tr
 
 ![](http://oi59.tinypic.com/1id85l.jpg)
+
 2.55 saniyede yükleniyor ve 96 request var. 
 
 Steam gördüğünüz üzere herşeyi düşünmüş durumda. Giriş ekranında bizi karşılayan slider, sağa doğru scroll ettiği sürece yeni resimleri çağırıyor. Sayfa ilk çalıştığında herşeyi yüklemiyor.
@@ -96,7 +97,7 @@ Yine aşağıda bulunan içerikler içinde aynısı geçerli. O kısma geldiğim
 Network penceresi açıp, sizde benim izlediğim yolu izleyin. Göreceksiniz ki kullanıcıya istemediği hiçbirşeyi yükletmiyor. Eğer siz onu kullanırsanız, o resim dosyalarını yüklüyorsunuz.
 
 #### Digigame İnceleme
-
+![](http://oi58.tinypic.com/b62how.jpg)
 Aslında Steam'in karşısına çıkarabilecek örnek bulmakta zorlandım. Fakat şans eseri bu siteyi buldum. 
 Oldukça yüksek boyutu olduğu için, tam benim aradığım örnekti.
 
