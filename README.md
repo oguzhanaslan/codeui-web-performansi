@@ -84,7 +84,7 @@ Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
 
 ### Alman Olun!
 
-Almanlık sıkı disiplin gerektiren bir mevzudur. Bizlere düşen görev ise, yaptığımız işlerin kullanıcılar tarafından kullanıldığını unutmayıp, gelecekte bir gün iyi bir Alman olmaktır. 
+Almanlık sıkı disiplin gerektiren bir mevzudur. Bizlere düşen görev ise, yaptığımız işlerin kullanıcılar tarafından kullanıldığını unutmayıp, disiplinli bir şekilde çalışarak, iyi bir Alman olmaktır :)
 
 ![](http://pbs.twimg.com/media/BsDIXntCEAA0XHL.jpg)
 
