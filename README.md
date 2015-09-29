@@ -89,6 +89,7 @@ Biri Steam diğeri ise http://www.digigame.com.tr
 
 Steam gördüğünüz üzere herşeyi düşünmüş durumda. Giriş ekranında bizi karşılayan slider, sağa doğru scroll ettiği sürece yeni resimleri çağırıyor. Sayfa ilk çalıştığında herşeyi yüklemiyor.
 Yine aşağıda bulunan içerikler içinde aynısı geçerli. O kısma geldiğimiz zaman imajları yüklemeye başlıyor. 
+
 <iframe width="420" height="315" src="https://www.youtube.com/embed/5jV3Kx5JS88" frameborder="0" allowfullscreen></iframe>
 
 
