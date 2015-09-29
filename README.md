@@ -42,6 +42,7 @@ GZIP, metin içeren dosyalarda bize bu konuda yardımcı oluyor. CSS, Javascript
 
 <table class="table-4"><colgroup><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th>Kitaplik</th><th>Boyut</th><th>Sikistirilmis boyut</th><th>Sikistirma orani</th></tr></thead><tbody><tr><td data-th="kitaplik">jquery-1.11.0.js</td><td data-th="boyut">276 KB</td><td data-th="sikistirilmis">82 KB</td><td data-th="tasarruflar">%70</td></tr><tr><td data-th="kitaplik">jquery-1.11.0.min.js</td><td data-th="boyut">94 KB</td><td data-th="sikistirilmis">33 KB</td><td data-th="tasarruflar">%65</td></tr><tr><td data-th="kitaplik">angular-1.2.15.js</td><td data-th="boyut">729 KB</td><td data-th="sikistirilmis">182 KB</td><td data-th="tasarruflar">%75</td></tr><tr><td data-th="kitaplik">angular-1.2.15.min.js</td><td data-th="boyut">101 KB</td><td data-th="sikistirilmis">37 KB</td><td data-th="tasarruflar">%63</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.css</td><td data-th="boyut">118 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%85</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.min.css</td><td data-th="boyut">98 KB</td><td data-th="sikistirilmis">17 KB</td><td data-th="tasarruflar">%83</td></tr><tr><td data-th="kitaplik">foundation-5.css</td><td data-th="boyut">186 KB</td><td data-th="sikistirilmis">22 KB</td><td data-th="tasarruflar">%88</td></tr><tr><td data-th="kitaplik">foundation-5.min.css</td><td data-th="boyut">146 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%88</td></tr></tbody></table>
 
+### Önbellek
 ### Kullanıcıyı Unutmayın! 
 Eğer kullanıcılar uygulamanıza fotoğraf gönderiyorsa, onları sıkıştırmayı kesinlikle unutmayın. Özellikle emlak, ilan içerikli bir uygulamanız var ise, anasayfanızın büyük bir kısmını irili ufaklı fotoğraflar kaplayacaktır. 
 En azından 30-40 adet fotoğraf anasayfada bulunacaktır. 
@@ -51,6 +52,18 @@ Fotoğrafları kullanıcılar yüklerken, sıkıştırmayı ve istediğiniz çö
 Bu konuda https://kraken.io/ size cüzi bir ücret karşılığında yardımcı olacaktır. Bu işlemi backend tarafında, ücretsiz kütüphaneler ile halledebilirsiniz. Büyük çoğunluğu kalite ve boyut konusunda düşürme yapıyor diye biliyorum. 
 
 https://www.reddit.com/r/Android/comments/1x5ct6/image_compression_on_instagram/ şurada bu konu hakkında, son derece feyizli bir sohbet bulunuyor. Okumanızı tavsiye ederim.
+
+### Tarayıcı Önbellekleme
+
+![](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/images/http-cache-hierarchy.png)
+
+    Statik kaynaklar için HTTP üstbilgilerinde bir süre sonu tarihi veya maksimum ömür ayarlamak, tarayıcıya, ağ üzerindeki kaynakları değil yerel diskte önceden indirilmiş olanları yüklemesini söyler. 
+
+
+
+
+
+
 
 
 
