@@ -82,29 +82,37 @@ GZIP, metin içeren dosyalarda bize bu konuda yardımcı oluyor. CSS, Javascript
 Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
 <table class="table-4"><colgroup><col span="1"><col span="1"><col span="1"><col span="1"></colgroup><thead><tr><th>Kitaplik</th><th>Boyut</th><th>Sikistirilmis boyut</th><th>Sikistirma orani</th></tr></thead><tbody><tr><td data-th="kitaplik">jquery-1.11.0.js</td><td data-th="boyut">276 KB</td><td data-th="sikistirilmis">82 KB</td><td data-th="tasarruflar">%70</td></tr><tr><td data-th="kitaplik">jquery-1.11.0.min.js</td><td data-th="boyut">94 KB</td><td data-th="sikistirilmis">33 KB</td><td data-th="tasarruflar">%65</td></tr><tr><td data-th="kitaplik">angular-1.2.15.js</td><td data-th="boyut">729 KB</td><td data-th="sikistirilmis">182 KB</td><td data-th="tasarruflar">%75</td></tr><tr><td data-th="kitaplik">angular-1.2.15.min.js</td><td data-th="boyut">101 KB</td><td data-th="sikistirilmis">37 KB</td><td data-th="tasarruflar">%63</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.css</td><td data-th="boyut">118 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%85</td></tr><tr><td data-th="kitaplik">bootstrap-3.1.1.min.css</td><td data-th="boyut">98 KB</td><td data-th="sikistirilmis">17 KB</td><td data-th="tasarruflar">%83</td></tr><tr><td data-th="kitaplik">foundation-5.css</td><td data-th="boyut">186 KB</td><td data-th="sikistirilmis">22 KB</td><td data-th="tasarruflar">%88</td></tr><tr><td data-th="kitaplik">foundation-5.min.css</td><td data-th="boyut">146 KB</td><td data-th="sikistirilmis">18 KB</td><td data-th="tasarruflar">%88</td></tr></tbody></table>
 
-### Steam İnceleme
+#### Steam İnceleme
 
-Web sitesi olarak kendime 2 tane oyun sitesi belirledim. 
+İncelemek için, kendime  2 tane oyun sitesi seçtim. 
 Biri Steam diğeri ise http://www.digigame.com.tr
+
+![](https://www.dropbox.com/s/fzh0g14mooa7ypy/Screen%20Shot%202015-09-29%20at%2016.04.44.png)
+2.55 saniyede yükleniyor ve 96 request var. 
 
 Steam gördüğünüz üzere herşeyi düşünmüş durumda. Giriş ekranında bizi karşılayan slider, sağa doğru scroll ettiği sürece yeni resimleri çağırıyor. Sayfa ilk çalıştığında herşeyi yüklemiyor.
 Yine aşağıda bulunan içerikler içinde aynısı geçerli. O kısma geldiğimiz zaman imajları yüklemeye başlıyor. 
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/5jV3Kx5JS88" frameborder="0" allowfullscreen></iframe>
+Network penceresi açıp, sizde benim izlediğim yolu izleyin. Göreceksiniz ki kullanıcıya istemediği hiçbirşeyi yükletmiyor. Eğer siz onu kullanırsanız, o resim dosyalarını yüklüyorsunuz.
 
+#### Digigame İnceleme
+
+Aslında Steam'in karşısına çıkarabilecek örnek bulmakta zorlandım. Fakat şans eseri bu siteyi buldum. 
+Oldukça yüksek boyutu olduğu için, tam benim aradığım örnekti.
+
+10.48 saniyede yükleniyor ve 7.9mb boyutunda. 814 Request bulunuyor. Bu rakamları Steam ile karşılaştırdığımızda performans için yapacağımız bu basit işlemlerin ne kadar önemli olduğunu görüyoruz. 
+
+Digigame, ne yapmamamız gerektiği konusunda bize gerekli dersleri veriyor.
+
+* Resimler optimize edilmemiş.
+* Sunucu oldukça yavaş.
+* Herşey "pat" diye yükleniyor.
+* Statik dosyalar birleştirilmemiş.
+* 1 MB'lık background görseli ile, Fatih Ürek'in kırdığı tabaklar kadar olmasada, kendince şov yapıyor.
+* Ürün fotoğrafları 100-300kb arasında değişiyor.
 
 ### Alman Olun!
 
 Almanlık sıkı disiplin gerektiren bir mevzudur. Bizlere düşen görev ise, yaptığımız işlerin kullanıcılar tarafından kullanıldığını unutmayıp, disiplinli bir şekilde çalışarak, iyi bir Alman olmaktır :)
 
 ![](http://pbs.twimg.com/media/BsDIXntCEAA0XHL.jpg)
-
-
-
-
-
-
-
-
-
-
