@@ -87,7 +87,7 @@ Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
 İncelemek için, kendime  2 tane oyun sitesi seçtim. 
 Biri Steam diğeri ise http://www.digigame.com.tr
 
-![](https://www.dropbox.com/s/fzh0g14mooa7ypy/Screen%20Shot%202015-09-29%20at%2016.04.44.png)
+![](http://oi59.tinypic.com/1id85l.jpg)
 2.55 saniyede yükleniyor ve 96 request var. 
 
 Steam gördüğünüz üzere herşeyi düşünmüş durumda. Giriş ekranında bizi karşılayan slider, sağa doğru scroll ettiği sürece yeni resimleri çağırıyor. Sayfa ilk çalıştığında herşeyi yüklemiyor.
