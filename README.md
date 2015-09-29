@@ -10,32 +10,34 @@ Geçtiğimiz birkaç hafta boyunca web performansı ile ilgili çeşitli araşt�
 * Belki resim dosyalarınızın boyutları gereğinden büyüktür.
 
 PageSpeed Insights, Yslow gibi performans araçlarını biliyorsunuzdur. Web sayfamızı bu araçlardan geçirerek, hangi dosyaların geç yüklendiğini ve bize neler yapmamız gerektiğini raporluyor. 
-Ama işler sadece bununla sınırlı değil. Bu test araçlarının düşünmediği bazı noktalarda var. 
-Bugüne kadar çalıştığım SEO firmalarının genelde Pagespeed ve benzeri araçlara çok önem verdiğini gördüm. Fakat işin geri kalan tarafından hiçbiri haberdar değil. Bu konuda teknik yeterlilikleri pek yok. 
+Ama işler sadece bununla sınırlı değil. Bu test araçlarının düşünmediği bazı noktalarda var. Bize sunduğu sadece neler yapmamız gerektiğine dair şeyler. Bende onlardan farklı birşey anlatmayacağım aslında.
+
+Bugüne kadar çalıştığım şirketlerde, hizmet aldığımız SEO firmalarının genelde Pagespeed ve benzeri araçlara çok önem verdiğini gördüm. Fakat işin geri kalan tarafından hiçbiri haberdar değil. Bu konuda teknik yeterlilikleri pek yok. 
+
+Bunlar bugüne kadar karşılaştığım "genel" sorunlar. Bir çoğumuz, projeye işimizi kolaylaştıran kütüphaneleri dahil ederken, uygulamanın performansını ve ileride geleceği boyutu gözden kaçırıyor. Benim tavsiyem "basit" diye nitelendirebileceğiniz işler için kütüphane kullanmamanız yönünde. Burada "jquery" popüler olduğu için seçtiğim bir örnekti. Kullanmamaktan ziyade, o işi daha kazançlı bir şekilde nasıl üretebiliyorsanız, o yolda ilerlemelisiniz.
 
 - 200x200 boyutunde bir resim göstermemiz gereken yerde, 600x600 boyutunda bir resmi kullanıcıya yüklettiğimiz zamanlar oluyor.
 - jQuery, Bootstrap, Font-Awesome gibi kütüphaneleri projeye dahil ettiğimiz zamanlarda, hiç kullanmadığımız yazı tipleri, ikonlar, kod parçaları dosya boyutunu yükselttiği için, kullanıcıya gereksiz yere dosya yükletiyoruz. 
 - 1 tane modal açtırmak için, -afedersiniz- "jquery ve jquery kütüphanesi" kullanmak zorunda mıyız?
 
-Bunlar bugüne kadar karşılaştığım "genel" sorunlar. Bir çoğumuz, projeye işimizi kolaylaştıran kütüphaneleri dahil ederken, uygulamanın performansını ve ileride geleceği boyutu gözden kaçırıyor. Benim tavsiyem "basit" diye nitelendirebileceğiniz işler için kütüphane kullanmamanız yönünde. Burada "jquery" popüler olduğu için seçtiğim bir örnekti. Kullanmamaktan ziyade, o işi daha kazançlı bir şekilde nasıl üretebiliyorsanız, o yolda ilerlemelisiniz.
-
 Onları kınıyorum ve onlara laflar hazırladım!
 
-### Gereksiz Verilerden Kurtulun!
+### Gereksiz Verilerden Kurtulun!
 
 10-15 tane ikon kullanmak için, Font-Awesome'a gerçekten ihtiyacımız var mı? 
 
-X kaynağını her sayfamıza dahil ettik, ancak bunu indirip görüntülenme maliyeti, kullaniciya sağladığı değeri karşılıyor mu? Kullanıcıların bu kaynağı kullandığını, ölçüp test ettik mi? Kullanıcılar, Fotoğraf Galerisi için yazdığımız javascript dosyasını, kullanmadığı halde indirmek zorunda mı?
+X kaynağını her sayfamıza dahil ettik. Ama bunun indirilip görüntülenme maliyeti, kullaniciya sağladığı değeri karşılıyor mu? Kullanıcıların bu kaynağı kullandığına dair bir test yaptık mı? Orada bulunan 12 tane ürün resmi gerçekten gerekli mi? Kullanıcı o içeriği gerçekten kullanıyor mu? 
+Sayfanın en altında bulunan, Fotoğraf Galerisi için yazdığımız javascript dosyasını kullanıcıya yükletmek zorunda mıyız? Hatta o galeri için fancybox gibi ıvır zıvır bir sürü javascript ve css dosyasını orada yükletmek çok maliyetli değil mi? Belki 1000 kişiden 20 kişi orayı kullanacak.
 
 * X bir haber sitesi, ziyaretçilerin herhangi bir tıklama yapmadan, haberleri ve fotoğrafları görebilmesi için, anasayfasına bir sürü slider eklemiş. 
 Sayfa yüklendiğinde tüm fotoğraflar kullanıcı tarafından göz gezdirilmese bile, bilgisayarına indirilecek. 
 
 * Her kullanıcının sayfanıza gelip, en aşağıda bulunan slider'ı kullandığını, orada yüklettiğiniz en kötü ihtiamli düşünüp, 200kb'lık 5-6 fotoğraftan oluşan galeriyi kullandığını ölçtünüz mü?  Ziyaretçi tarafından hiçbir zaman görüntülenmeyecek gereksiz kaynakları indirterek, yüksek bir maliyete sebep oluyorsunuz.
 
-*B Sitesi, web sayfasını Mobil Tarayıcılar ile uyumlu yapmak için, Boootstrap Framework'ünü sayfasına dahil etmiştir. 126KB CSS ve 29KB JS, toplamda 155kb'lık bir veriyi boş yere kullanıcıya yükletmeye başlamıştır. 
+* B Sitesi, web sayfasını Mobil Tarayıcılar ile uyumlu yapmak için, Boootstrap Framework'ünü sayfasına dahil etmiştir. 126KB CSS ve 29KB JS, toplamda 155kb'lık bir veriyi boş yere kullanıcıya yükletmeye başlamıştır. 
 Oysa 15 dakika içerisinde basit bir grid yazarak veya bularak, bu yükten kurtulabilirdik. Veya Bootstrap'te kullanmadığı component'leri silerek kullanabilirdi. Nasıl olsa çalışıyor...
 
-### Dosyaları Birleştirin
+### Dosyaları Birleştirin
 HTTP Request'lerini azaltmak için çağırdığınız CSS ve Javascript dosyalarını tek bir dosyaya sıkıştırın. 
 İmaj dosyalarını olabildiğince CSS Sprite tekniğini kullanarak çağırın. 
 
@@ -49,7 +51,7 @@ http://sonsuzdongu.com/blog/grunt-ile-frontend-islerinizi-otomatize-edin
 http://tolga.gezginis.com/gulp-ile-frontend-islerinizi-yonetin.html
 
 
-### Kullanıcıyı Unutmayın! 
+### Kullanıcıyı Unutmayın! 
 
 -![](http://www.ids.com.tr/IDS-Media/image/firsat.jpg)
 
@@ -61,7 +63,6 @@ Fotoğrafları kullanıcılar yüklerken, sıkıştırmayı ve istediğiniz çö
 Bu konuda https://kraken.io/ size cüzi bir ücret karşılığında yardımcı olacaktır. Bu işlemi backend tarafında, ücretsiz kütüphaneler ile halledebilirsiniz. Büyük çoğunluğu kalite ve boyut konusunda düşürme yapıyor diye biliyorum. 
 
 https://www.reddit.com/r/Android/comments/1x5ct6/image_compression_on_instagram/ şurada bu konu hakkında, son derece feyizli bir sohbet bulunuyor. Okumanızı tavsiye ederim.
-
 
 ### Tarayıcı Önbellekleme
 
@@ -85,7 +86,7 @@ Popüler kütüphanelerin GZIP ile sıkıştırıldıktan sonraki boyutları:
 #### Steam İnceleme
 
 İncelemek için, kendime  2 tane oyun sitesi seçtim. 
-Biri Steam diğeri ise http://www.digigame.com.tr
+Biri [Steam](store.steampowered.com) diğeri ise [Digigame](http://www.digigame.com.tr)
 
 ![](http://oi59.tinypic.com/1id85l.jpg)
 
@@ -98,7 +99,7 @@ Network penceresi açıp, sizde benim izlediğim yolu izleyin. Göreceksiniz ki 
 
 #### Digigame İnceleme
 ![](http://oi58.tinypic.com/b62how.jpg)
-Aslında Steam'in karşısına çıkarabilecek örnek bulmakta zorlandım. Fakat şans eseri bu siteyi buldum. 
+Aslında Steam'in karşısına çıkarabilecek örnek bulmakta zorlandım. Fakat şans eseri [Digigame](http://www.digigame.com.tr) adında bir oyun sitesi buldum. 
 Oldukça yüksek boyutu olduğu için, tam benim aradığım örnekti.
 
 10.48 saniyede yükleniyor ve 7.9mb boyutunda. 814 Request bulunuyor. Bu rakamları Steam ile karşılaştırdığımızda performans için yapacağımız bu basit işlemlerin ne kadar önemli olduğunu görüyoruz. 
@@ -109,8 +110,10 @@ Digigame, ne yapmamamız gerektiği konusunda bize gerekli dersleri veriyor.
 * Sunucu oldukça yavaş.
 * Herşey "pat" diye yükleniyor.
 * Statik dosyalar birleştirilmemiş.
-* 1 MB'lık background görseli ile, Fatih Ürek'in kırdığı tabaklar kadar olmasada, kendince şov yapıyor.
-* Ürün fotoğrafları 100-300kb arasında değişiyor.
+* * Ürün fotoğrafları 100-300kb arasında değişiyor.
+* 1 MB'lık background görseli ile, Fedon'un kırdığı tabaklar kadar olmasada, kendince şov yapıyor.
+
+![](http://img-s1.onedio.com/id-534ed52e5ed65e5814faa9ba/rev-2/raw/s-c02611fc554c7a7fea5e96325a1027ebb3c0a30c.jpg)
 
 ### Alman Olun!
 
