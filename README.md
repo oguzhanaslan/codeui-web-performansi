@@ -15,9 +15,10 @@ Bugüne kadar çalıştığım SEO firmalarının genelde Pagespeed ve benzeri a
 
 - 200x200 boyutunde bir resim göstermemiz gereken yerde, 600x600 boyutunda bir resmi kullanıcıya yüklettiğimiz zamanlar oluyor.
 - jQuery, Bootstrap, Font-Awesome gibi kütüphaneleri projeye dahil ettiğimiz zamanlarda, hiç kullanmadığımız yazı tipleri, ikonlar, kod parçaları dosya boyutunu yükselttiği için, kullanıcıya gereksiz yere dosya yükletiyoruz. 
-- 1 tane modal açtırmak için, -afedersiniz- "jquery kütüphanesi" kullanmak zorunda mısınız?
+- 1 tane modal açtırmak için, -afedersiniz- "jquery ve jquery kütüphanesi" kullanmak zorunda mıyız?
 
-Bunlar bugüne kadar karşılaştığım "genel" sorunlar. Bir çoğumuz, projeye işimizi kolaylaştıran kütüphaneleri dahil ederken, uygulamanın performansını ve gelecekte uygulamanın ileride geleceği boyutu gözden kaçırıyor. 
+Bunlar bugüne kadar karşılaştığım "genel" sorunlar. Bir çoğumuz, projeye işimizi kolaylaştıran kütüphaneleri dahil ederken, uygulamanın performansını ve ileride geleceği boyutu gözden kaçırıyor. Benim tavsiyem "basit" diye nitelendirebileceğiniz işler için kütüphane kullanmamanız yönünde. Burada "jquery" popüler olduğu için seçtiğim bir örnekti. Kullanmamaktan ziyade, o işi daha kazançlı bir şekilde nasıl üretebiliyorsanız, o yolda ilerlemelisiniz.
+
 Onları kınıyorum ve onlara laflar hazırladım!
 
 ### Gereksiz Verilerden Kurtulun!
@@ -31,7 +32,8 @@ Sayfa yüklendiğinde tüm fotoğraflar kullanıcı tarafından göz gezdirilmes
 
 * Her kullanıcının sayfanıza gelip, en aşağıda bulunan slider'ı kullandığını, orada yüklettiğiniz en kötü ihtiamli düşünüp, 200kb'lık 5-6 fotoğraftan oluşan galeriyi kullandığını ölçtünüz mü?  Ziyaretçi tarafından hiçbir zaman görüntülenmeyecek gereksiz kaynakları indirterek, yüksek bir maliyete sebep oluyorsunuz.
 
-*B Sitesi, web sayfasını Mobil Tarayıcılar ile uyumlu yapmak için, -afedersiniz- Boootstrap Framework'ünü projesine dahil etmiştir. 126KB CSS ve 29KB JS, toplamda 155kb'lık bir veriyi boş yere kullanıcıya yükletmeye başlamıştır. Oysa 15 dakika içerisinde basit bir grid yazarak veya bularak, bu yükten kurtulabilirdik. 
+*B Sitesi, web sayfasını Mobil Tarayıcılar ile uyumlu yapmak için, Boootstrap Framework'ünü sayfasına dahil etmiştir. 126KB CSS ve 29KB JS, toplamda 155kb'lık bir veriyi boş yere kullanıcıya yükletmeye başlamıştır. 
+Oysa 15 dakika içerisinde basit bir grid yazarak veya bularak, bu yükten kurtulabilirdik. Veya Bootstrap'te kullanmadığı component'leri silerek kullanabilirdi. Nasıl olsa çalışıyor...
 
 ### Dosyaları Birleştirin
 HTTP Request'lerini azaltmak için çağırdığınız CSS ve Javascript dosyalarını tek bir dosyaya sıkıştırın. 
